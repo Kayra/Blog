@@ -1,3 +1,5 @@
 TODO
 *.bak.php
 .DS_Store
+wp-content/themes/naked-wordpress-master/images/
+wp-content/uploads/

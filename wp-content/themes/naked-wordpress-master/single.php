@@ -5,28 +5,6 @@
  */
 
 get_header(); // This fxn gets the header.php file and renders it ?>
-<header id="masthead" class="site-header" role="banner">
-	<div class="container center">
-	
-		<nav role="navigation" class="site-navigation main-navigation">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); // Display the user-defined menu in Appearance > Menus ?>
-		</nav><!-- .site-navigation .main-navigation -->
-	</div>
-	<div class="center">
-
-		<div id="brand">
-			<h1 class="site-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); // Link to the home page ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); // Title it with the blog name ?>" rel="home"><?php bloginfo( 'name' ); // Display the blog name ?></a>
-			</h1>
-			<h4 class="site-description">
-				<?php bloginfo( 'description' ); // Display the blog description, found in General Settings ?>
-			</h4>
-		</div><!-- /brand -->
-		
-		<div class="clear"></div>
-	</div><!--/container -->
-		
-</header><!-- #masthead .site-header -->
 
 <div class="main-fluid"><!-- start the page containter -->
 	<div id="primary" class="row-fluid">
@@ -41,32 +19,39 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 				?>
 
 					<article class="post">
-					
-					<!-- This is where the header sheit goes -->
 
+							<div id="container" class="container intro-effect-push">
+								<header class="header">
+									<div class="bg-img"><img src="<?php echo get_field('backgroundImage')['url'] ?>" alt="Background Image"/></div>
+		
+									<h1 class="title"><?php the_title(); // Display the title of the post ?></h1>
+									<div class="post-meta">
+										<?php the_time('m.d.Y'); // Display the time it was published ?>
+										<?php // the author(); Uncomment this and it will display the post author ?>
+									
+									</div><!--/post-meta -->
+								</header>
+								<button class="trigger"><span>Trigger</span></button>
+								<h1 class="title"><?php the_title(); // Display the title of the post ?></h1>
+								<div class="post-meta">
+									<?php the_time('m.d.Y'); // Display the time it was published ?>
+									<?php // the author(); Uncomment this and it will display the post author ?>
+								
+								</div><!--/post-meta -->
+								<div class="the-content">
+									<?php the_content(); 
+									// This call the main content of the post, the stuff in the main text box while composing.
+									// This will wrap everything in p tags
+									?>
+									
+									<?php wp_link_pages(); // This will display pagination links, if applicable to the post ?>
+								</div><!-- the-content -->
+								<div class="meta clearfix">
+									<div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?></div>
+									<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
+								</div><!-- Meta -->
+							</div><!-- /container -->
 
-						<h1 class="title"><?php the_title(); // Display the title of the post ?></h1>
-						<div class="post-meta">
-							<?php the_time('m.d.Y'); // Display the time it was published ?>
-							<?php // the author(); Uncomment this and it will display the post author ?>
-						
-						</div><!--/post-meta -->
-						
-						<div class="the-content">
-							<?php the_content(); 
-							// This call the main content of the post, the stuff in the main text box while composing.
-							// This will wrap everything in p tags
-							?>
-							
-							<?php wp_link_pages(); // This will display pagination links, if applicable to the post ?>
-						</div><!-- the-content -->
-						
-						<div class="meta clearfix">
-							<div class="category"><?php echo get_the_category_list(); // Display the categories this post belongs to, as links ?></div>
-							<div class="tags"><?php echo get_the_tag_list( '| &nbsp;', '&nbsp;' ); // Display the tags this post has, as links separated by spaces and pipes ?></div>
-						</div><!-- Meta -->
-						
-					</article>
 
 				<?php endwhile; // OK, let's stop the post loop once we've displayed it ?>
 				
@@ -87,4 +72,6 @@ get_header(); // This fxn gets the header.php file and renders it ?>
 
 		</div><!-- #content .site-content -->
 	</div><!-- #primary .content-area -->
+
+
 <?php get_footer(); // This fxn gets the footer.php file and renders it ?>
