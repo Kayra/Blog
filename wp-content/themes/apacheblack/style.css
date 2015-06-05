@@ -1,0 +1,87 @@
+/*
+	Theme Name: Apache Black
+	Theme URI: http://kayra.co.uk
+	Description: Theme for the Apache Black blog
+	Version: 1.0.0
+	Author: Kayra Alat (@kayraalat)
+	Author URI: http://kayra.co.uk	
+	Tags: Blank, HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+
+/* Structure
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+	background-color: #43434B;
+}
+
+header {
+	background: url(/wp-content/themes/apacheblack/images/header.png) no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	height: 945px;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+h1, h2, h3, h4, h5, h6, p {
+	color: #FFFFFF;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	letter-spacing: 7px;
+	font-size: 5em;
+	text-align: center;
+	margin-top: 200px;
+	text-transform: uppercase;
+}
+
+h2 {
+	letter-spacing: 1px;
+	font-size: 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	letter-spacing: 3px;
+	font-size: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 30px 0;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header p {
+	margin-top: 300px;
+	text-align: center;
+}
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	
+}

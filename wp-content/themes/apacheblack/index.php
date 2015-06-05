@@ -5,42 +5,105 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <title><?php bloginfo('name') ?></title>
+  <meta name="description" content="Personal Blog">
+  <meta name="author" content="Kayra Alat">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Wordpress stuff
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <?php wp_head(); ?>
 
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h1><?php bloginfo('name') ?></h1>
+          <h2><?php bloginfo('description') ?></h2>
+          <p>A twenty something web developer traveling the world and eating whatever I can get my hands on. 
+          Don’t be fooled, the fitness part is literally just so I can eat without needing to buy more clothes.</p>
+        </div>
       </div>
     </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>MOST RECENT POST</h3>
+      </div>
+    </div>
+  </div>  
+
+  <div class="image">
+    <div class="container">
+       <div class="row">
+        <div class="twelve columns">
+          <h4>Why I fucking love to eat ></h4>
+        </div>
+      </div>
+    </div>  
   </div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>FEATURED POSTS</h3>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="one-third column">
+        <h5>Dat alcoholism ></h5>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="one-third column">
+        <h5>Time to get shrekt ></h5>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="one-third column">
+        <h5>Chroist I'm a hipster ></h5>
+      </div>
+    </div>
+  </div>  
+
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <ul class="footer">
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Email</a></li>
+        </ul>
+        <p>Created by Kayra Alat</p>
+      </div>
+    </div>
+  </div>  
+
+  <?php wp_footer(); ?>
+
 </body>
 </html>
