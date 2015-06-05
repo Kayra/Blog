@@ -47,15 +47,20 @@
     </div>
   </div>  
 
-  <div class="image">
+  <?php $the_query = new WP_Query( 'showposts=1' ); ?>
+  <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
+
+  <div class="image" style="background: url(<?php echo get_field('backgroundImage')['url'] ?>) no-repeat center center; ">
     <div class="container">
        <div class="row">
         <div class="twelve columns">
-          <h4>Why I fucking love to eat ></h4>
+          <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h4>
         </div>
       </div>
     </div>  
   </div>
+
+  <?php endwhile;?>
 
   <div class="container">
     <div class="row">
@@ -65,29 +70,31 @@
     </div>
   </div>  
 
-  <div class="container">
-    <div class="row">
-      <div class="one-third column">
-        <h5>Dat alcoholism ></h5>
+  <div class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <h5>Dat alcoholism ></h5>
+        </div>
       </div>
-    </div>
-  </div>  
+    </div>  
 
-  <div class="container">
-    <div class="row">
-      <div class="one-third column">
-        <h5>Time to get shrekt ></h5>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <h5>Time to get shrekt ></h5>
+        </div>
       </div>
-    </div>
-  </div>  
+    </div>  
 
-  <div class="container">
-    <div class="row">
-      <div class="one-third column">
-        <h5>Chroist I'm a hipster ></h5>
+    <div class="container">
+      <div class="row">
+        <div class="one-third column">
+          <h5>Chroist I'm a hipster ></h5>
+        </div>
       </div>
-    </div>
-  </div>  
+    </div>  
+  </div>
 
   <div class="container">
     <div class="row">
