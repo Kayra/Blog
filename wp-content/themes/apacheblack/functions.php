@@ -15,8 +15,8 @@
 
 	function apacheblack_scripts() {
 
-		wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css');
-		wp_enqueue_style('skeleton', get_template_directory_uri() . '/css/skeleton.css');
+		wp_enqueue_style('bootstrap-theme', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
+		wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
 		wp_enqueue_style('style', get_stylesheet_uri());
 
 	}

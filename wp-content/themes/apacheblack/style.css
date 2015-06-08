@@ -29,10 +29,6 @@ header {
 	height: 945px;
 }
 
-.featured .column{
-	display: inline-block;
-}
-
 .image {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -41,13 +37,13 @@ header {
 }
 
 .feature {
-	position: relative;
-	clear: both;
+	padding: 0;
 }
 
-.featured .row {
-	display: inline;
-	clear: left;
+.footer {
+	clear: both;
+	text-align: center;
+	padding: 30px 0;
 }
 
 
@@ -69,6 +65,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
 }
 
 h1 {
@@ -77,6 +74,7 @@ h1 {
 	text-align: center;
 	margin-top: 200px;
 	text-transform: uppercase;
+	margin-bottom: 10px;
 }
 
 h2 {
@@ -84,6 +82,7 @@ h2 {
 	font-size: 1.6em;
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0;
 }
 
 h3 {
@@ -105,6 +104,27 @@ h4 a {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 2em;
+    -webkit-transition:border-bottom .5s;
+    -moz-transition:border-bottom .5s;
+    -ms-transition:border-bottom .5s;
+     -o-transition:border-bottom .5s;
+        transition:border-bottom .5s;
+}
+
+h4 a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+	border-bottom: 3px solid #FFFFFF;
+	-webkit-transition:border-bottom .5s;
+	-moz-transition:border-bottom .5s;
+	-ms-transition:border-bottom .5s;
+	 -o-transition:border-bottom .5s;
+	    transition:border-bottom .5s;
+}
+
+h4 a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 h5 {
@@ -113,15 +133,29 @@ h5 {
 	text-shadow: 2px 2px 4px #000000;
 }
 
-.feature-title h5 {
+.feature h5 {
 	position: absolute;
 	top: 70%;
-	left: 25%;
+	left: 30%;
 }
 
-.feature-title h5 a {
+.feature h5 a {
 	text-decoration: none;
 	color: #FFFFFF;
+	-webkit-transition:border-bottom .5s;
+    -moz-transition:border-bottom .5s;
+    -ms-transition:border-bottom .5s;
+     -o-transition:border-bottom .5s;
+        transition:border-bottom .5s;
+}
+
+.feature h5 a:hover {
+	border-bottom: 3px solid #FFFFFF;
+	-webkit-transition:border-bottom .5s;
+	-moz-transition:border-bottom .5s;
+	-ms-transition:border-bottom .5s;
+	 -o-transition:border-bottom .5s;
+	    transition:border-bottom .5s;
 }
 
 p {
@@ -132,20 +166,43 @@ p {
 header p {
 	margin-top: 300px;
 	text-align: center;
-	position: absolute;
 }
 
+.footer a {
+	font-size: 1.4em;
+	text-decoration: none;
+	color: #FFFFFF;
+	-webkit-transition:border-bottom .5s;
+    -moz-transition:border-bottom .5s;
+    -ms-transition:border-bottom .5s;
+     -o-transition:border-bottom .5s;
+        transition:border-bottom .5s;
+}
+
+.footer a:hover {
+	border-bottom: 3px solid #FFFFFF;
+	-webkit-transition:border-bottom .5s;
+	-moz-transition:border-bottom .5s;
+	-ms-transition:border-bottom .5s;
+	 -o-transition:border-bottom .5s;
+	    transition:border-bottom .5s;
+}
+
+.footer p {
+	margin-bottom: 30px;
+}
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-ul {
+.footer ul {
 	list-style: none;
 	text-align: center;
-	padding: 0;
+	padding-bottom: 10px;
 	margin: 0;
 }
 
-li {
+.footer li {
 	display: inline-block;
+	margin: 0 10px;
 }
