@@ -9,6 +9,8 @@
 
 	License: MIT
 	License URI: http://opensource.org/licenses/mit-license.php
+
+	341.33333333
 */
 
 
@@ -29,7 +31,6 @@ header {
 
 .featured .column{
 	display: inline-block;
-	float: left;
 }
 
 .image {
@@ -38,6 +39,26 @@ header {
 	-o-background-size: cover;
 	height: 945px;
 }
+
+.feature {
+	position: relative;
+	clear: both;
+}
+
+.featured .row {
+	display: inline;
+	clear: left;
+}
+
+
+/* Images
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.featured img {
+    width: 100%;
+    height: auto;
+}
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -89,6 +110,18 @@ h4 a {
 h5 {
 	font-size: 2em;
 	text-align: center;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.feature-title h5 {
+	position: absolute;
+	top: 70%;
+	left: 25%;
+}
+
+.feature-title h5 a {
+	text-decoration: none;
+	color: #FFFFFF;
 }
 
 p {
@@ -99,10 +132,11 @@ p {
 header p {
 	margin-top: 300px;
 	text-align: center;
+	position: absolute;
 }
 
 
-/* Typography
+/* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 ul {

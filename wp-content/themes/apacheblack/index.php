@@ -32,7 +32,7 @@
         <div class="twelve columns">
           <h1><?php bloginfo('name') ?></h1>
           <h2><?php bloginfo('description') ?></h2>
-          <p>A twenty something web developer traveling the world and eating whatever I can get my hands on. 
+          <p>You've stumbled upon the blog of a twenty something web developer traveling the world and eating whatever I can get my hands on. 
           Don’t be fooled, the fitness part is literally just so I can eat without needing to buy more clothes.</p>
         </div>
       </div>
@@ -50,7 +50,7 @@
   <?php $the_query = new WP_Query( 'showposts=1' ); ?>
   <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 
-  <div class="image" style="background: url(<?php echo get_field('backgroundImage')['url'] ?>) no-repeat center center; ">
+  <div class="image" style="background: url(<?php echo get_field('background_image')['url'] ?>) no-repeat center center; ">
     <div class="container">
        <div class="row">
         <div class="twelve columns">
@@ -60,7 +60,7 @@
     </div>  
   </div>
 
-  <?php endwhile;?>
+  <?php endwhile; wp_reset_query(); ?>
 
   <div class="container">
     <div class="row">
@@ -71,30 +71,21 @@
   </div>  
 
   <div class="featured">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column">
-          <h5>Dat alcoholism ></h5>
-        </div>
-      </div>
-    </div>  
 
-    <div class="container">
+    <?php $the_query2 = new WP_Query( 'posts_per_page=3&cat=2'); ?>
+    <?php while ($the_query2 -> have_posts()) : $the_query2 -> the_post(); ?>
       <div class="row">
         <div class="one-third column">
-          <h5>Time to get shrekt ></h5>
+          <div class="feature">
+            <div class="feature-title">
+              <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
+            </div>
+            <img src="<?php echo get_field('featured_thumbnail')['url'] ?>">
+          </div>
         </div>
       </div>
-    </div>  
+    <?php endwhile; wp_reset_query(); ?>
 
-    <div class="container">
-      <div class="row">
-        <div class="one-third column">
-          <h5>Chroist I'm a hipster ></h5>
-        </div>
-      </div>
-    </div>  
-  </div>
 
   <div class="container">
     <div class="row">
