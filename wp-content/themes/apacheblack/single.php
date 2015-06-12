@@ -32,6 +32,7 @@
 
 				<?php $comments_args = array(
 
+					'comment_notes_before' => '',
 					'fields' => apply_filters('comment_form_default_fields', array(
 						'author' => '<input id="author" name="author" type="text" placeholder ="Name" value="' . 
         							esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' />',
@@ -46,7 +47,9 @@
 
 				) ?>
 
-				<?php comment_form($comments_args); ?>
+				<div class="comments">
+					<?php comment_form($comments_args); ?>
+				</div>
 			</div>
 		</article>
 	</div>
