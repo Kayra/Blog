@@ -20,7 +20,7 @@ body {
 	background-color: #43434B;
 }
 
-header.front-page {
+.front-page {
 	background: url(/wp-content/themes/apacheblack/images/header.png) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -43,6 +43,10 @@ header.front-page {
 	clear: both;
 	text-align: center;
 	padding: 30px 0;
+}
+
+.content-text {
+	margin-bottom: 50px;
 }
 
 
@@ -78,6 +82,8 @@ h1 {
 
 .post .title h1 {
 	font-size: 5.1em;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
 }
 
 h2 {
@@ -171,6 +177,16 @@ header p {
 	text-align: center;
 }
 
+.content-text p {
+	font-size: 1.5em;
+	line-height: 1.7em;
+	font-weight: 300;
+}
+
+.post .title .subtitle {
+	font-size: 2.3em;
+}
+
 .footer a {
 	font-size: 1.4em;
 	text-decoration: none;
@@ -206,6 +222,7 @@ header p {
 	list-style: none;
 	text-align: center;
 	padding-bottom: 10px;
+	padding-left: 0;
 	margin: 0;
 }
 
@@ -471,4 +488,12 @@ button.trigger span::before {
 	button.trigger::before {
 		display: none;
 	}
+}
+
+
+/* Utility
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.utility-margin-top {
+	margin-top: 0 !important;
 }
