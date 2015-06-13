@@ -6,8 +6,8 @@
     <div class="container">
       <h1><?php bloginfo('name') ?></h1>
       <h2><?php bloginfo('description') ?></h2>
-      <p>This is the blog of a twenty something web developer traveling the world and eating whatever I can get my hands on. 
-      Don’t be fooled, the fitness part is literally just so I can eat without needing to buy more clothes.</p>
+      <p>This is the blog of a twenty something web developer traveling the world and eating whatever I can get my hands on, then 
+      working out so I don't have to buy any new clothes. Let me share my lessons with you.</p>
     </div>
   </header>
 

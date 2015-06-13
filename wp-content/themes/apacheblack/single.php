@@ -27,9 +27,7 @@
 					<?php the_content(); ?>
 				</div>
 				<hr/>
-
 				<?php comments_template(); ?>
-
 			</div>
 		</article>
 	</div>
