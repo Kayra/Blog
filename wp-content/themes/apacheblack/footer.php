@@ -1,6 +1,6 @@
   <div class="container footer">
     <ul>
-      <li><a href="#">Archive</a></li>
+      <li><a href="index.php?page_id=58">Archive</a></li>
       <li><a href="#">Instagram</a></li>
       <li><a href="#">Twitter</a></li>
       <li><a href="#">Email</a></li>
