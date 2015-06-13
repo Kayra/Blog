@@ -18,7 +18,7 @@
 		<div class="title">
 			<h1><?php the_title(); ?></h1>
 			<p class='subtitle'><?php the_field('subtitle'); ?></p>
-			<p>Posted in <strong><?php the_category(', '); ?></strong> on <strong><?php the_time('F j, Y'); ?></strong></p>
+			<p>Posted in <strong><?php the_category(', '); ?></strong> on <strong><?php the_time('j F, Y'); ?></strong></p>
 		</div>
 
 		<article class="content">
