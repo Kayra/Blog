@@ -14,7 +14,7 @@ $args = array( 'post_type' => 'post', 'posts_per_page' => 10, 'paged' => $paged 
 $wp_query = new WP_Query($args);
 while ( have_posts() ) : the_post(); ?>
     <h2><a href="<?php the_permalink() ?>"><?php the_title(); ?> <?php the_time('j F, Y'); ?></a></h2>
-<?php endwhile; ?>
+<?php endwhile; wp_reset_query(); ?>
 
 <!-- then the pagination links -->
 <?php next_posts_link( '&larr; Older posts', $wp_query ->max_num_pages); ?>
