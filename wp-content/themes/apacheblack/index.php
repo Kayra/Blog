@@ -32,7 +32,7 @@
 
   <div class="featured">
 
-    <?php $featured_query = new WP_Query( 'posts_per_page=3&cat=2'); ?>
+    <?php $featured_query = new WP_Query("posts_per_page=3&tag='featured'"); ?>
     <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
     <div class="col-md-4 feature">
       <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
