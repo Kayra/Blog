@@ -2,7 +2,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="front-page">
+  <header class="index-header">
     <div class="container">
       <h1><?php bloginfo('name') ?></h1>
       <h2><?php bloginfo('description') ?></h2>

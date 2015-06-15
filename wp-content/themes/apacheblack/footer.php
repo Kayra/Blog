@@ -10,7 +10,7 @@
       <li><a href="#">Twitter</a></li>
       <li><a href="#">Email</a></li>
     </ul>
-    <p>Created by Kayra Alat</p>
+    <p>Created by <a href='https://twitter.com/kayraalat' target="_blank">Kayra Alat</a></p>
   </div>
 
   <?php wp_footer(); ?>
