@@ -14,17 +14,16 @@
   <?php $recent_query = new WP_Query( 'showposts=1' ); ?>
   <?php while ($recent_query -> have_posts()) : $recent_query -> the_post(); ?>
 
-  <div class="image" style="background: url(<?php echo get_field('background_image')['url'] ?>) no-repeat center center; ">
-    <div class="container">
-          <h4><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h4>
-    </div>  
+  <div class="latest-post-image">
+    <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h3>
+    <a href="<?php the_permalink() ?>"><img src="<?php echo get_field('background_image')['url'] ?>"></a>
   </div>
 
   <?php endwhile; wp_reset_query(); ?>
 
   <div class="featured">
 
-    <?php $featured_query = new WP_Query("posts_per_page=3&tag='featured'"); ?>
+    <?php $featured_query = new WP_Query( "posts_per_page=3&tag='featured'" ); ?>
     <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
     <div class="col-md-4 feature">
       <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
