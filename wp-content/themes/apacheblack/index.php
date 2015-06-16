@@ -11,10 +11,6 @@
     </div>
   </header>
 
-<!--   <div class="container">
-    <h3>MOST RECENT POST</h3>
-  </div>   -->
-
   <?php $recent_query = new WP_Query( 'showposts=1' ); ?>
   <?php while ($recent_query -> have_posts()) : $recent_query -> the_post(); ?>
 
@@ -25,10 +21,6 @@
   </div>
 
   <?php endwhile; wp_reset_query(); ?>
-
-<!--   <div class="container">
-    <h3>FEATURED POSTS</h3>
-  </div>   -->
 
   <div class="featured">
 
