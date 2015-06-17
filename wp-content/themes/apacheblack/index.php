@@ -29,8 +29,12 @@
       <?php $featured_query = new WP_Query( "posts_per_page=3&tag='featured'" ); ?>
       <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
       <div class="col-md-4 feature">
-        <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
-        <a href="<?php the_permalink() ?>"><img src="<?php echo get_field('featured_thumbnail')['url'] ?>"></a>
+        <a href="<?php the_permalink() ?>">
+          <div class="featured-post-text">
+            <h5><?php the_title(); ?> ></h5>
+          </div>
+          <img src="<?php echo get_field('featured_thumbnail')['url'] ?>">
+        </a>
       </div>
       <?php endwhile; wp_reset_query(); ?>
     </div>
