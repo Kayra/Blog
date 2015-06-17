@@ -14,19 +14,13 @@
   <?php $recent_query = new WP_Query( 'showposts=1' ); ?>
   <?php while ($recent_query -> have_posts()) : $recent_query -> the_post(); ?>
 
-  <a href="<?php the_permalink() ?>" class="latest-post-image" style="background: url(<?php echo get_field('background_image')['url'] ?>) 
-                                                                      no-repeat center center; ">
-    <div class="latest-post-text">
-      <h3><?php the_title(); ?> ></h3>
-    </div>
-  </a>
 
-<!--   <a href="<?php the_permalink() ?>" class="latest-post-image">
+  <a href="<?php the_permalink() ?>" class="latest-post-image">
     <div class="latest-post-text">
       <h3><?php the_title(); ?> ></h3>
     </div>
     <img src="<?php echo get_field('background_image')['url'] ?>">
-  </a> -->
+  </a>
 
   <?php endwhile; wp_reset_query(); ?>
 

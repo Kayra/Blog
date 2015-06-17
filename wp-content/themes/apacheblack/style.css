@@ -47,23 +47,23 @@ body {
 }
 
 .latest-post-image {
-	height: 945px;
-	width: 100%;
-	display: table;
+	display: block;
 	position: relative;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 }
 
 .latest-post-text {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 70%;
 }
 
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.latest-post-image img {
+	width: 100%;
+}
 
 .featured img {
     width: 100%;
@@ -106,12 +106,12 @@ h2 {
 }
 
 h3 {
-	font-size: 3em;
+	font-size: 4em;
 	text-align: center;
+	display: inline-block;
 	text-shadow: 0px 2px 4px #000000;
 	margin: 0;
 	padding: 0;
-	display: inline-block;
 	text-decoration: none;
     -webkit-transition:border-bottom .5s;
     -moz-transition:border-bottom .5s;
