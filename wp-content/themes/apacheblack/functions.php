@@ -15,6 +15,7 @@
 
 	function apacheblack_scripts() {
 
+		wp_enqueue_style('reset', get_template_directory_uri() . '/css/reset.css');
 		wp_enqueue_style('bootstrap-theme', get_template_directory_uri() . '/css/bootstrap-theme.min.css');
 		wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css');
 		wp_enqueue_style('style', get_stylesheet_uri());

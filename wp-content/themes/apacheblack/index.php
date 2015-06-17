@@ -14,23 +14,32 @@
   <?php $recent_query = new WP_Query( 'showposts=1' ); ?>
   <?php while ($recent_query -> have_posts()) : $recent_query -> the_post(); ?>
 
-  <div class="latest-post-image">
-    <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h3>
-    <a href="<?php the_permalink() ?>"><img src="<?php echo get_field('background_image')['url'] ?>"></a>
-  </div>
+  <a href="<?php the_permalink() ?>" class="latest-post-image" style="background: url(<?php echo get_field('background_image')['url'] ?>) 
+                                                                      no-repeat center center; ">
+    <div class="latest-post-text">
+      <h3><?php the_title(); ?> ></h3>
+    </div>
+  </a>
+
+<!--   <a href="<?php the_permalink() ?>" class="latest-post-image">
+    <div class="latest-post-text">
+      <h3><?php the_title(); ?> ></h3>
+    </div>
+    <img src="<?php echo get_field('background_image')['url'] ?>">
+  </a> -->
 
   <?php endwhile; wp_reset_query(); ?>
 
-  <div class="featured">
-
-    <?php $featured_query = new WP_Query( "posts_per_page=3&tag='featured'" ); ?>
-    <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
-    <div class="col-md-4 feature">
-      <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
-      <a href="<?php the_permalink() ?>"><img src="<?php echo get_field('featured_thumbnail')['url'] ?>"></a>
+  <div class="container-fluid featured">
+    <div class="row">
+      <?php $featured_query = new WP_Query( "posts_per_page=3&tag='featured'" ); ?>
+      <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
+      <div class="col-md-4 feature">
+        <h5><a href="<?php the_permalink() ?>"><?php the_title(); ?> ></a></h5>
+        <a href="<?php the_permalink() ?>"><img src="<?php echo get_field('featured_thumbnail')['url'] ?>"></a>
+      </div>
+      <?php endwhile; wp_reset_query(); ?>
     </div>
-    <?php endwhile; wp_reset_query(); ?>
-
   </div>
 
 <?php get_footer(); ?>

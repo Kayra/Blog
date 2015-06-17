@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title><?php bloginfo('name') ?></title>
-  <meta name="description" content="Personal Blog">
+  <meta name="description" content="Travel, food and fitness blog of a twenty something web developer.">
   <meta name="author" content="Kayra Alat">
 
   <!-- Mobile Specific Metas
