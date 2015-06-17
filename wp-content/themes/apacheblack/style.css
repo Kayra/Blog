@@ -170,6 +170,7 @@ h3:visited, h4 a:visited {
 
 .archive-list h4 {
 	margin-top: 0;
+	padding: 10px 0;
 	font-size: 1em;
 }
 
@@ -183,7 +184,7 @@ h5 {
 	display: inline-block;
 }
 
-.feature h5 a {
+.feature h5 {
 	text-decoration: none;
 	color: #FFFFFF;
 	-webkit-transition:border-bottom .5s;
@@ -193,7 +194,7 @@ h5 {
         transition:border-bottom .5s;
 }
 
-.feature h5 a:hover {
+.feature h5:hover {
 	border-bottom: 3px solid #FFFFFF;
 	-webkit-transition:border-bottom .5s;
 	-moz-transition:border-bottom .5s;
@@ -205,6 +206,14 @@ h5 {
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.1em;
+}
+
+.content-text p {
+	padding-bottom: 25px;
+}
+
+.content-text p:last-child {
+	padding: 0;
 }
 
 header p {
@@ -261,7 +270,7 @@ header p {
 .footer ul {
 	list-style: none;
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	padding-left: 0;
 	margin: 0;
 }
