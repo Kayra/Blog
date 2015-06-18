@@ -1,13 +1,12 @@
 <?php
 
 	function google_fonts() {
-		
-		$query_args = array(
-			'family' => 'Montserrat:400,700|Open+Sans:400|Cardo:400,700',
-			'subset' => 'latin,latin-ext',
-			);
 
-		wp_register_style('google_fonts', add_query_arg($query_args, "//fonts.googleapis.com/css"), array(), null);
+		wp_register_style('googlefont-OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400', array(), false, 'all');
+		wp_register_style('googlefont-Cardo', 'http://fonts.googleapis.com/css?family=Cardo:400,700', array(), false, 'all');
+
+        wp_enqueue_style('googlefont-OpenSans');
+        wp_enqueue_style('googlefont-Cardo');
 
 	}
 

@@ -88,6 +88,11 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url(wp-content/themes/apacheblack/fonts/Montserrat-Light.otf);
+}
+
 h1, h2, h3, h4, h5, h6, p {
 	color: #FFFFFF;
 }
