@@ -17,7 +17,7 @@
 
   <a href="<?php the_permalink() ?>" class="latest-post-image">
     <div class="latest-post-text">
-      <h3><?php the_title(); ?> ></h3>
+      <h3 class="sliding-middle-out"><?php the_title(); ?> ></h3>
     </div>
     <img src="<?php echo get_field('background_image')['url'] ?>">
   </a>
@@ -31,7 +31,7 @@
       <div class="col-md-4 feature">
         <a href="<?php the_permalink() ?>">
           <div class="featured-post-text">
-            <h5><?php the_title(); ?> ></h5>
+            <h5 class="sliding-middle-out"><?php the_title(); ?> ></h5>
           </div>
           <img src="<?php echo get_field('featured_thumbnail')['url'] ?>">
         </a>

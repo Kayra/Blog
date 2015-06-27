@@ -139,11 +139,6 @@ h3 {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-    -webkit-transition:border-bottom .5s;
-    -moz-transition:border-bottom .5s;
-    -ms-transition:border-bottom .5s;
-     -o-transition:border-bottom .5s;
-        transition:border-bottom .5s;
 }
 
 h4 {
@@ -157,23 +152,13 @@ h4 a {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 2em;
-    -webkit-transition:border-bottom .5s;
-    -moz-transition:border-bottom .5s;
-    -ms-transition:border-bottom .5s;
-     -o-transition:border-bottom .5s;
-        transition:border-bottom .5s;
 }
 
-h3:hover, h4 a:hover {
-	color: #FFFFFF;
+h4 a:hover {
 	text-decoration: none;
-	border-bottom: 3px solid #FFFFFF;
-	-webkit-transition:border-bottom .5s;
-	-moz-transition:border-bottom .5s;
-	-ms-transition:border-bottom .5s;
-	 -o-transition:border-bottom .5s;
-	    transition:border-bottom .5s;
+	color: #FFFFFF;
 }
+
 
 h3:visited, h4 a:visited {
 	color: #FFFFFF;
@@ -199,20 +184,6 @@ h5 {
 .feature h5 {
 	text-decoration: none;
 	color: #FFFFFF;
-	-webkit-transition:border-bottom .5s;
-    -moz-transition:border-bottom .5s;
-    -ms-transition:border-bottom .5s;
-     -o-transition:border-bottom .5s;
-        transition:border-bottom .5s;
-}
-
-.feature h5:hover {
-	border-bottom: 3px solid #FFFFFF;
-	-webkit-transition:border-bottom .5s;
-	-moz-transition:border-bottom .5s;
-	-ms-transition:border-bottom .5s;
-	 -o-transition:border-bottom .5s;
-	    transition:border-bottom .5s;
 }
 
 p {
@@ -247,20 +218,6 @@ header p {
 	font-size: 1.4em;
 	text-decoration: none;
 	color: #FFFFFF;
-	-webkit-transition:border-bottom .5s;
-    -moz-transition:border-bottom .5s;
-    -ms-transition:border-bottom .5s;
-     -o-transition:border-bottom .5s;
-        transition:border-bottom .5s;
-}
-
-.footer ul a:hover {
-	border-bottom: 3px solid #FFFFFF;
-	-webkit-transition:border-bottom .5s;
-	-moz-transition:border-bottom .5s;
-	-ms-transition:border-bottom .5s;
-	 -o-transition:border-bottom .5s;
-	    transition:border-bottom .5s;
 }
 
 .footer p {
@@ -281,6 +238,30 @@ blockquote {
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 30px;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sliding-middle-out, .footer ul a {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+}
+
+.sliding-middle-out:after, .footer ul a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-middle-out:hover:after, .footer ul a:hover:after {
+	width: 100%;
+	background: #FFFFFF;
 }
 
 /* Lists

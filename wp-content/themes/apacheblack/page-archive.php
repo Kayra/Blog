@@ -19,7 +19,7 @@ Template Name: Archive
 		$wp_query = new WP_Query($args);
 		while ( have_posts() ) : the_post(); 
 		?>
-		    <li><h4><a href="<?php the_permalink() ?>"><?php the_title(); ?> - <?php the_time('j F, Y'); ?></a></h4></li>
+		    <li><h4><a href="<?php the_permalink() ?>" class="sliding-middle-out"><?php the_title(); ?> - <?php the_time('j F, Y'); ?></a></h4></li>
 		<?php endwhile; wp_reset_query(); ?>
 
 		<!-- then the pagination links -->
