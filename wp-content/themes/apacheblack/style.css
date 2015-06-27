@@ -21,7 +21,7 @@ body {
 }
 
 .index-header {
-	background: url(/wp-content/themes/apacheblack/images/header.png) no-repeat center center; 
+	background: url(/wp-content/themes/apacheblack/images/header.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -272,8 +272,15 @@ header p {
 	color: #FFFFFF;
 }
 
-.quote {
-	font-family: 'Cardo', serif;
+p a, p a:hover {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+blockquote {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 30px;
 }
 
 /* Lists
