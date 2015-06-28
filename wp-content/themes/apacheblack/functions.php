@@ -2,7 +2,7 @@
 
 	function google_fonts() {
 
-		wp_register_style('googlefont-OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans', array(), false, 'all');
+		wp_register_style('googlefont-OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans+:400,300', array(), false, 'all');
 
         wp_enqueue_style('googlefont-OpenSans');
 
