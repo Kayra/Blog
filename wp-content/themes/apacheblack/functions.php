@@ -2,11 +2,9 @@
 
 	function google_fonts() {
 
-		wp_register_style('googlefont-OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400', array(), false, 'all');
-		wp_register_style('googlefont-Cardo', 'http://fonts.googleapis.com/css?family=Cardo:400,700', array(), false, 'all');
+		wp_register_style('googlefont-OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans', array(), false, 'all');
 
         wp_enqueue_style('googlefont-OpenSans');
-        wp_enqueue_style('googlefont-Cardo');
 
 	}
 
