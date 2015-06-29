@@ -577,7 +577,7 @@ h4 a {
 @media (max-width: 768px) { 
 
 .post .title h1, h1 {
-	font-size: 2em;
+	font-size: 1.7em;
 	margin-top: 50px;
 }
 
@@ -631,6 +631,10 @@ header p {
 .content .col-md-6 {
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+header .header {
+	display: none;
 }
 
 }
