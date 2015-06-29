@@ -618,6 +618,7 @@ header p {
 .content-text p {
 	line-height: 1.9em;
 	font-size: 1.2em;
+	text-align: justify;
 }
 
 .footer ul a {
