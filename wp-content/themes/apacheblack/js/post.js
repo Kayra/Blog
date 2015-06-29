@@ -139,6 +139,8 @@
 
         window.addEventListener( 'scroll', scrollPage );
         trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+
+        //Allows scrolling on touch devices
         window.addEventListener('touchstart', enable_scroll)
     });
 

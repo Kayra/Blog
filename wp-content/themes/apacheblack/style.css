@@ -647,9 +647,11 @@ header p {
 	width: 0;
 }
 
-.bg-img {
-	overflow: visible;
-}
+.intro-effect-push .header {
+    opacity: 0;
+    -webkit-transform: translateY(-100%) scale(0.9);
+    transform: translateY(-100%) scale(0.9);
+    transition: 0s;
 
 }
 
