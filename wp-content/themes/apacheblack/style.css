@@ -628,6 +628,11 @@ header p {
 	font-size: 0.7em;
 }
 
+.content .col-md-6 {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 }
 
 
