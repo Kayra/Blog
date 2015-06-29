@@ -3,3 +3,5 @@ TODO
 .DS_Store
 wp-content/uploads/
 wp-config.php
+wp-content/plugins/google-analytics-for-wordpress/
+wp-content/plugins/w3-total-cache/
