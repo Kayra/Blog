@@ -7,7 +7,7 @@
 	<div class="container-fluid intro-effect-push post" id="container">
 
 		<header class="header">
-			<div class="bg-img row">
+			<div class="bg-img">
 				<img src="<?php echo get_field('background_image')['url'] ?>">
 			</div>
 			<div class="title">
@@ -30,6 +30,7 @@
 				<?php //comments_template(); ?>
 			</div>
 		</article>
+		
 	</div>
 
 <?php endwhile; endif; ?>

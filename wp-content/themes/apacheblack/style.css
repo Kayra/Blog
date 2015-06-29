@@ -317,7 +317,7 @@ blockquote {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .header {
-	position: relative;
+	position: absolute;
 	margin: 0 auto;
 	min-height: 560px;
 	width: 100%;
@@ -481,6 +481,8 @@ button.trigger span::before {
 .intro-effect-push .header {
 	position: absolute;
 	z-index: 1500;
+	top: 0;
+	left: 0;
 }
 
 .intro-effect-push > .title {
@@ -570,6 +572,10 @@ h4 a {
   font-size: 1.6em;
 }
 
+.bg-img {
+	overflow: visible;
+}
+
 }
 
 /* Mobile
@@ -633,8 +639,16 @@ header p {
 	padding-right: 5px;
 }
 
-header .header {
+/*header.header {
 	display: none;
+}*/
+
+.sliding-middle-out:hover:after, .footer ul a:hover:after {
+	width: 0;
+}
+
+.bg-img {
+	overflow: visible;
 }
 
 }
