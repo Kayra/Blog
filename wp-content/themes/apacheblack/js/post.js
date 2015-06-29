@@ -139,7 +139,6 @@
 
         window.addEventListener( 'scroll', scrollPage );
         trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
-        $(window).on(‘touchstart’, enable_scroll);
     });
 
 })(jQuery, this);
