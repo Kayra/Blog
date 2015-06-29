@@ -550,8 +550,12 @@ button.trigger span::before {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 992px) { 
 
-h1 {
+.post .title h1, h1 {
 	font-size: 3em;
+}
+
+.post .title h1 {
+	margin-top: 0;
 }
 
 h2 {
@@ -562,15 +566,24 @@ h4 a {
 	font-size: 1.5em;
 }
 
+.post .title .subtitle {
+  font-size: 1.6em;
+}
+
 }
 
 /* Mobile
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 768px) { 
 
-h1 {
+.post .title h1, h1 {
 	font-size: 2em;
 	margin-top: 50px;
+}
+
+.post .title h1 {
+	margin-top: 0;
+	line-height: 1.5em;
 }
 
 h2 {
@@ -585,6 +598,10 @@ h4 a {
 	font-size: 1.2em;
 }
 
+.post .title .subtitle {
+  font-size: 1.3em;
+}
+
 p {
 	font-size: 0.9em;
 	line-height: 1.9em;
@@ -596,6 +613,10 @@ header p {
 
 .index-header {
 	height: 400px;
+}
+
+.content-text p {
+	line-height: 1.9em;
 }
 
 .footer ul a {
