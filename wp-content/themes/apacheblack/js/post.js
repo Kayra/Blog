@@ -1,3 +1,4 @@
+if (innerWidth >= 768) { 
 (function ($, root, undefined) {
 
 	$(function () {
@@ -143,9 +144,7 @@
         //Allows scrolling on touch devices
         window.addEventListener('touchstart', enable_scroll)
 
-        if (innerWidth <= 768) { 
-            classie.addClass(container, 'modify'); 
-        }
     });
 
 })(jQuery, this);
+}
