@@ -6,8 +6,8 @@
     <div class="container">
       <h1><?php bloginfo('name') ?></h1>
       <h2><?php bloginfo('description') ?></h2>
-      <p>This is the blog of a twenty something web developer poorly articulating his experiences as he travels, 
-         eats too much, and subsequently tries to work off the weight. Here’s hoping a few people can benefit from reading 
+      <p>This is the blog of a twenty something web developer poorly articulating his experiences as he travels,
+         eats too much, and subsequently tries to work off the weight. Here’s hoping a few people can benefit from reading
          about the mistakes I’ll inevitably make along the way.</p>
     </div>
   </header>
@@ -27,7 +27,7 @@
 
   <div class="container-fluid featured">
     <div class="row">
-      <?php $featured_query = new WP_Query( "posts_per_page=3&tag='featured'" ); ?>
+      <?php $featured_query = new WP_Query( "posts_per_page=3&category_name='featured'" ); ?>
       <?php while ($featured_query -> have_posts()) : $featured_query -> the_post(); ?>
       <div class="col-md-4 feature">
         <a href="<?php the_permalink() ?>">
