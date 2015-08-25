@@ -39,7 +39,7 @@ body {
 .footer {
 	clear: both;
 	text-align: center;
-	padding: 30px 0;
+	padding: 20px 0;
 }
 
 .content-text {
@@ -606,7 +606,7 @@ h4 a {
 }
 
 .post .title .subtitle {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 p {
