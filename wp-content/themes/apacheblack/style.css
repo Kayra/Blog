@@ -4,7 +4,7 @@
 	Description: Theme for the Apache Black blog
 	Version: 1.0.0
 	Author: Kayra Alat (@kayraalat)
-	Author URI: http://kayra.co.uk	
+	Author URI: http://kayra.co.uk
 	Tags: HTML5, CSS3
 
 	License: MIT
@@ -21,7 +21,7 @@ body {
 }
 
 .index-header {
-	background: url(/wp-content/themes/apacheblack/images/header.jpg) no-repeat center center; 
+	background: url(/wp-content/themes/apacheblack/images/header.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -551,7 +551,7 @@ button.trigger span::before {
 }
 /* Tablet
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 992px) { 
+@media (max-width: 992px) {
 
 .post .title h1, h1 {
 	font-size: 3em;
@@ -581,7 +581,7 @@ h4 a {
 
 /* Mobile
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
 
 .post .title h1, h1 {
 	font-size: 1.7em;
@@ -661,9 +661,12 @@ header p {
 	visibility: hidden;
 }
 
+span.mobile {
+	display: none;
 }
 
 
+}
 
 /* Utility
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

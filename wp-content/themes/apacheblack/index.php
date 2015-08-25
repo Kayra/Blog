@@ -6,9 +6,7 @@
     <div class="container">
       <h1><?php bloginfo('name') ?></h1>
       <h2><?php bloginfo('description') ?></h2>
-      <p>This is the blog of a twenty something web developer poorly articulating his experiences as he travels,
-         eats too much, and subsequently tries to work off the weight. Here’s hoping a few people can benefit from reading
-         about the mistakes I’ll inevitably make along the way.</p>
+      <p>This is the blog of a twenty something web developer poorly articulating his experiences as he travels, eats too much, and subsequently tries to work off the weight. <span class="mobile"> Here’s hoping a few people can benefit from reading about the mistakes I’ll inevitably make along the way.</span></p>
     </div>
   </header>
 
@@ -20,7 +18,11 @@
     <div class="latest-post-text">
       <h3 class="sliding-middle-out"><?php the_title(); ?> ></h3>
     </div>
+    <?php if(!is_mobile()) { ?>
     <img src="<?php echo get_field('background_image')['url'] ?>">
+    <?php } elseif (is_mobile()) { ?>
+      <img src="<?php echo get_field('featured_thumbnail')['url'] ?>">
+    <?php } ?>
   </a>
 
   <?php endwhile; wp_reset_query(); ?>
@@ -34,7 +36,11 @@
           <div class="featured-post-text">
             <h5 class="sliding-middle-out"><?php the_title(); ?> ></h5>
           </div>
+          <?php if(!is_mobile()) { ?>
           <img src="<?php echo get_field('featured_thumbnail')['url'] ?>">
+          <?php } elseif (is_mobile()) { ?>
+            <img src="<?php echo get_field('background_image')['url'] ?>">
+          <?php } ?>
         </a>
       </div>
       <?php endwhile; wp_reset_query(); ?>
