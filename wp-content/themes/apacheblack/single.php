@@ -27,10 +27,10 @@
 					<?php the_content(); ?>
 				</div>
 				<hr/>
-				<?php //comments_template(); ?>
+				<?php comments_template(); ?>
 			</div>
 		</article>
-		
+
 	</div>
 
 <?php endwhile; endif; ?>
