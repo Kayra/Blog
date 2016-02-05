@@ -28,6 +28,7 @@
 				</div>
 				<hr/>
 				<?php comments_template(); ?>
+				<hr/>
 			</div>
 		</article>
 
