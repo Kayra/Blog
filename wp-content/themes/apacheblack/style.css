@@ -565,26 +565,12 @@ button.trigger span::before {
 	margin-bottom: 0.3em;
 }
 
-.comments #author {
-	float: left;
-	width: 49%;
-	padding: 0.3em;
-	margin: 0.3em;
-}
-
-.comments #email {
-	float: right;
-	width: 48%;
-	padding: 0.3em;
-	margin: 0.3em;
-}
-
-.comments #comment {
+.comments #author, .comments #email, .comments #comment {
+	width: 100%;
+	padding: 0.5em;
+	margin: 0.4em 0;
 	clear: both;
-	width: 99%;
-	padding: 0.3em;
-	margin: 0.3em;
-	margin-top: 0.3em;
+	border-radius: 4px;
 }
 
 .comments #submit {
@@ -594,8 +580,8 @@ button.trigger span::before {
 	background-color: #FFFFFF;
 	color: #2B303B;
 	border: 0;
+	border-radius: 4px;
 }
-
 
 /* Tablet
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
