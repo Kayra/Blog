@@ -19,10 +19,13 @@
 
 		if ( is_single() || (is_page() && !is_page_template())) {
         wp_register_script('post-script', get_template_directory_uri() . '/js/post.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('post-script'); 
+        wp_enqueue_script('post-script');
 		wp_register_script('classie', get_template_directory_uri() . '/js/lib/classie.js', array('jquery'), '1.0.0'); // Custom scripts
         wp_enqueue_script('classie');
     	}
+
+        wp_register_script('project', get_template_directory_uri() . '/js/project.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('project');
 
 	}
 
