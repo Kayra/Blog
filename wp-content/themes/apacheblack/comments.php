@@ -18,7 +18,7 @@
 
 <div class="comments">
 	<?php
-		wp_list_comments();
+		wp_list_comments( array( 'callback' => 'apacheblack_comments_callback' ) );
 		comment_form($comment_form_args);
 	?>
 	<div class="required-fields" style="display:none"><p>Please fill in all the fields</p></div>

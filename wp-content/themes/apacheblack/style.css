@@ -583,6 +583,11 @@ button.trigger span::before {
 	border-radius: 4px;
 }
 
+.comment-awaiting-moderation {
+	color: #FFFFFF;
+	font-size: 0.8em;
+}
+
 /* Tablet
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 992px) {
