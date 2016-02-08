@@ -588,6 +588,21 @@ button.trigger span::before {
 	font-size: 0.8em;
 }
 
+.comment-author-date {
+	width: 100%;
+	display: block;
+}
+
+.comment-author-date img {
+	width: 33%;
+	display: inline;
+	float: left;
+}
+
+.comment-author-date p, .comment-author-date a {
+	float: left;
+}
+
 /* Tablet
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 992px) {

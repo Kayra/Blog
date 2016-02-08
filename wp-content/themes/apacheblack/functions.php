@@ -47,16 +47,18 @@
     <?php if ( 'div' != $args['style'] ) : ?>
     <div id="div-comment-<?php comment_ID() ?>" class="comment-body">
     <?php endif; ?>
-    <div class="comment-author vcard">
-    <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-    <?php printf( __( '<p><cite class="fn">%s</cite> <span class="says">says:</span></p>' ), get_comment_author_link() ); ?>
-    </div>
+    <div class="comment-author-date">
+        <div class="comment-author vcard">
+        <?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
+        <?php printf( __( '<p><cite class="fn">%s</cite> <span class="says">says:</span></p>' ), get_comment_author_link() ); ?>
+        </div>
 
-    <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
-        <?php
-            /* translators: 1: date, 2: time */
-            printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
-        ?>
+        <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ); ?>">
+            <?php
+                /* translators: 1: date, 2: time */
+                printf( __('%1$s at %2$s'), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '  ', '' );
+            ?>
+        </div>
     </div>
 
     <?php comment_text(); ?>
