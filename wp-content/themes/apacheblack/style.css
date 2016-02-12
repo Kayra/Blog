@@ -84,6 +84,13 @@ body {
     height: auto;
 }
 
+.content img {
+	width: 220%;
+	margin-left: -60%;
+	height: auto;
+	margin-bottom: 1em;
+}
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -139,6 +146,10 @@ h3 {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+}
+
+.content h3 {
+	padding-bottom: 0.2em;
 }
 
 h4 {
