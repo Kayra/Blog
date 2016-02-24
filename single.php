@@ -22,13 +22,15 @@
 		</div>
 
 		<article class="content">
-			<div class="utility-margin-top col-md-6 col-md-offset-3">
-				<div class="content-text">
-					<?php the_content(); ?>
+			<div class="row">
+				<div class="utility-margin-top col-md-6 col-md-offset-3">
+					<div class="content-text">
+						<?php the_content(); ?>
+					</div>
+					<hr/>
+					<?php comments_template(); ?>
+					<hr/>
 				</div>
-				<hr/>
-				<?php comments_template(); ?>
-				<hr/>
 			</div>
 		</article>
 
