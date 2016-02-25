@@ -41,7 +41,7 @@
 
     function media_format_shortcode($attributes, $content = null) {
         $new_content = '</div></div>';
-        $new_content .= '<div class="col-md-12">' . $content . '</div>';
+        $new_content .= '<div class="col-md-12 post-media">' . $content . '</div>';
         $new_content .= '<div class="col-md-6 col-md-offset-3"><div class="content-text">';
         return $new_content;
     }

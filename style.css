@@ -72,6 +72,10 @@ body {
 	top: 70%
 }
 
+.col-md-12.post-media {
+	padding: 0;
+}
+
 /* Images
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
@@ -85,10 +89,9 @@ body {
 }
 
 .content img {
-	width: 220%;
-	margin-left: -60%;
+	width: 100%;
 	height: auto;
-	margin-bottom: 1em;
+	margin-bottom: 4em;
 }
 
 /* Videos
@@ -96,18 +99,27 @@ body {
 
 .videoWrapper {
 	position: relative;
+	max-width: none !important;
 	width: 100%;
-	height: 0;
-	padding-bottom: 56.25%;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	height: auto;
 }
 
+.videoWrapper iframe, .videoWrapper video {
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.post-media > div {
+	max-width: none !important;
+}
+
+.video-wrapper {
+	padding-bottom: 56.25% !important;
+	margin-bottom: 3em;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -674,6 +686,14 @@ h2 {
 	font-size: 1.3em;
 }
 
+h3 {
+	font-size: 3.5em;
+}
+
+.content h3 {
+	padding-bottom: 0.2em;
+}
+
 h4 a {
 	font-size: 1.5em;
 }
@@ -776,6 +796,11 @@ span.mobile {
 
 h5 {
 	font-size: 1.2em;
+}
+
+.content img {
+	margin-top: -2em;
+	margin-bottom: 2em;
 }
 
 }
