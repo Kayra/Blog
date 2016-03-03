@@ -804,6 +804,11 @@ h5 {
 	margin-bottom: 2em;
 }
 
+.comment-author img {
+	margin-top: 0;
+	margin-bottom: 0;
+};
+
 }
 
 /* Utility
