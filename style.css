@@ -650,6 +650,7 @@ button.trigger span::before {
 	display: block;
 	width: 3.5em;
 	height: auto;
+	margin-bottom: 0;
 }
 
 .comment-author-date .comment-meta a {
