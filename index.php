@@ -1,8 +1,11 @@
 <?php get_header(); ?>
+  <header class="index-header">
+  </header>
+
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <header class="index-header">
+  <!-- <header class="index-header">
     <div class="container">
       <h1><?php bloginfo('name') ?></h1>
       <h2><?php bloginfo('description') ?></h2>
@@ -48,3 +51,4 @@
   </div>
 
 <?php get_footer(); ?>
+ -->

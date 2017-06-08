@@ -21,11 +21,11 @@ body {
 }
 
 .index-header {
-	background: url(/wp-content/themes/apacheblack/images/header.jpg) no-repeat center center;
+	background: url(/wp-content/themes/apacheblack/images/holding-page.jpg) no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	height: 945px;
+	height: 1000px;
 }
 
 .archive-header h1 {
